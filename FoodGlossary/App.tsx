@@ -22,30 +22,54 @@ export default function App() {
         initialRouteName="Home"
         screenOptions={{
           headerTitleAlign: 'center',
+          headerTintColor: '#FFFFFF',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
         }}
       >
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: 'Food Glossary' }}
+          options={{
+            title: 'Food Glossary',
+            headerStyle: {
+              backgroundColor: '#334155',
+            },
+          }}
         />
 
         <Stack.Screen
           name="Fruits"
           component={FruitsScreen}
-          options={{ title: 'Fruits' }}
+          options={{
+            title: 'Fruits',
+            headerStyle: {
+              backgroundColor: '#E85D75',
+            },
+          }}
         />
 
         <Stack.Screen
           name="Protein"
           component={ProteinScreen}
-          options={{ title: 'Protein' }}
+          options={{
+            title: 'Protein',
+            headerStyle: {
+              backgroundColor: '#C96A3D',
+            },
+          }}
         />
 
         <Stack.Screen
           name="Fiber"
           component={FiberScreen}
-          options={{ title: 'Fiber' }}
+          options={{
+            title: 'Fiber',
+            headerStyle: {
+              backgroundColor: '#5B8C5A',
+            },
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
